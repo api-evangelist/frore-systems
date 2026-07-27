@@ -1,7 +1,27 @@
 aid: frore-systems
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/frore-systems.png
 name: Frore Systems
-description: Frore Systems is a company surfaced as a portfolio company of mayfield and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Frore Systems is a Silicon Valley thermal-management company that develops solid-state active
+  cooling technology for high-performance computing in space-constrained devices. Its flagship
+  AirJet solid-state cooling chips (AirJet Mini and AirJet PAK families) and LiquidJet direct-to-chip
+  liquid cooling for data centers enable higher power density, quieter operation, and thinner designs
+  across consumer devices, mini PCs, industrial embedded systems, and data-center compute trays. The
+  company partners with Intel, Qualcomm, NVIDIA, AMD, Phison, and Zotac, is headquartered in Silicon
+  Valley with manufacturing in Taiwan, and reached unicorn status following a Series D round. Frore is
+  a hardware/semiconductor company with no public developer API surface; this profile is maintained in
+  the API Evangelist network for company identity and market coverage.
 url: https://raw.githubusercontent.com/api-evangelist/frore-systems/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Thermal Management
+- Semiconductors
+- Hardware
+- Cooling
+- Data Center
+- Solid State Cooling
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/frore-systems-domain-security.yml
 - type: Website
   url: https://froresystems.com
+- type: Blog
+  url: https://froresystems.com/blog
+- type: Support
+  url: https://froresystems.com/contact
+- type: PrivacyPolicy
+  url: https://froresystems.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
